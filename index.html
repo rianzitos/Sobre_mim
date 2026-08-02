@@ -21,32 +21,34 @@
 
     <main>
         <section class="titulo">
-            <div class="tituMain">
-                <h2>Olá, me chamo</h2>
-                <h1>Rian Rafael</h1>
-                <h3>Desenvolvedor Full Stack</h4>
-            </div>
+            <div class="tituConteudo">
+                <div class="tituMain">
+                    <h2>Olá, me chamo</h2>
+                    <h1>Rian Rafael</h1>
+                    <h3>Desenvolvedor Full Stack</h3>
+                </div>
 
-            <div class="tituContent">
-                <h4>
-                    Atualmente estou cursando Desenvolvimento de Sistemas no SENAI, onde venho aprimorando minhas
-                    habilidades em desenvolvimento web, banco de dados e programação.
-                    Gosto de criar projetos para aprender novas tecnologias e transformar ideias em soluções práticas.
-                </h4>
+                <div class="tituContent">
+                    <h4>
+                        Atualmente estou cursando Desenvolvimento de Sistemas no SENAI, onde venho aprimorando minhas
+                        habilidades em desenvolvimento web, banco de dados e programação.
+                        Gosto de criar projetos para aprender novas tecnologias e transformar ideias em soluções práticas.
+                    </h4>
 
-                <button class="butTitu">Saiba mais<i class="bi bi-arrow-right"></i></button>
+                    <button class="butTitu">Saiba mais<i class="bi bi-arrow-right"></i></button>
 
-                <div class="aplicativos">
-                    <i class="bi bi-github icone"></i>
-                    <i class="bi bi-instagram icone"></i>
-                    <i class="bi bi-linkedin icone"></i>
+                    <div class="aplicativos">
+                        <a href="https://github.com/rianzitos" target="_blank"><i class="bi bi-github icone"></i></a>
+                        <a href="https://www.instagram.com/rianzitos1910/" target="_blank"><i class="bi bi-instagram icone"></i></a>
+                        <a href="#"><i class="bi bi-linkedin icone"></i></a>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <!-- <div class="containerImg">
-            <img src="assets/foto_rian.jpg" alt="Foto do Rian">
-        </div> -->
+            <div class="tituFoto">
+                <img src="assets/foto_rian.jpg" alt="Foto do Rian">
+            </div>
+        </section>
 
         <section class="interesses">
             <h1>Interesses</h1>
@@ -153,8 +155,11 @@
                     <div class="contatoIconBox">
                         <i class="bi bi-chat-dots-fill"></i>
                     </div>
-                    <textarea class="contatoContent" placeholder="Digite sua mensagem"></textarea>
+                    <textarea class="contatoContent" placeholder="Digite sua mensagem" maxlength="1000"></textarea>
+                    <span class="contadorChars">0/1000</span>
                 </div>
+
+                <p class="formMensagem"></p>
 
                 <div class="contatoBotaoWrapper">
                     <button class="butEnviar">
@@ -172,9 +177,9 @@
         <div class="footerColuna footerRedes">
             <h4>Redes sociais</h4>
             <div class="footerIcones">
-                <div class="contatoIconBox"><i class="bi bi-github"></i></div>
-                <div class="contatoIconBox"><i class="bi bi-linkedin"></i></div>
-                <div class="contatoIconBox"><i class="bi bi-instagram"></i></div>
+                <a href="https://github.com/rianzitos" target="_blank"><div class="contatoIconBox"><i class="bi bi-github"></i></div></a>
+                <a href="#"><div class="contatoIconBox"><i class="bi bi-linkedin"></i></div></a>
+                <a href="https://www.instagram.com/rianzitos1910/" target="_blank"><div class="contatoIconBox"><i class="bi bi-instagram"></i></div></a>
             </div>
         </div>
 
