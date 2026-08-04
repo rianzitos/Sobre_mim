@@ -9,17 +9,15 @@
 * {
     padding: 0;
     margin: 0;
+
 }
 
-/* 
-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 85vh;
-    width: 85%;
-    margin: auto;
-} */
+*::selection {
+    color: #ffffff;
+    /* Cor do texto selecionado */
+    background: var(--neon-primary);
+    /* Cor de fundo da seleção */
+}
 
 body {
     background: radial-gradient(circle at top left,
@@ -169,7 +167,7 @@ body {
     font-size: 2rem;
     color: var(--neon-primary);
     cursor: pointer;
-    
+
 }
 
 .icone:hover {
@@ -592,4 +590,299 @@ body {
 .formMensagem.sucesso {
     display: block;
     color: #3ddc84;
+}
+
+/* ========================= */
+/*  Responsividade - MOBILE  */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+    /* Header e Titulo */
+
+    .titulo {
+        flex-direction: column;
+        height: 90vh;
+        padding-bottom: 6vh;
+        margin-top: 10vh;
+    }
+
+    .menu a {
+        font-size: 1.1rem;
+    }
+
+    .tituConteudo {
+        width: 80vw;
+        height: 80vh;
+    }
+
+    .tituMain {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tituMain h1 {
+        font-size: 4rem;
+    }
+
+    .tituFoto {
+        display: block;
+        width: 75vw;
+        height: 75vw;
+        max-width: 240px;
+        max-height: 240px;
+        margin: 4vh auto 0;
+    }
+
+    .tituContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tituContent h4 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .aplicativos {
+        display: flex;
+        justify-content: space-between;
+        width: 50vw;
+    }
+    .aplicativos i {
+        font-size: 2.2rem;
+    }
+
+    .butTitu {
+        height: 5vh;
+        width: 35vw;
+    }
+
+    /* Interesses */
+    .interesses {
+        height: auto;
+        padding-bottom: 6vh;
+        margin-top: 8vh;
+    }
+
+    .interesses h1 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3vw;
+    }
+
+    .containerInteresses {
+        display: flex;
+        flex-direction: column;
+        gap: 6vh;
+        padding: 8% 5%;
+    }
+
+    .cardInteresses {
+        width: 100%;
+        height: auto;
+        padding-bottom: 4%;
+    }
+
+    .cardImg {
+        width: 50vw;
+        height: 20vw;
+        /* max-width: 90px;
+        max-height: 90px; */
+        margin: 2rem auto 0;
+    }
+
+    .cardImg i {
+        font-size: 3.3rem;
+    }
+
+    .cardImg img {
+        width: 15vw;
+    }
+
+    .cardContent h3 {
+        font-size: 1.7rem;
+    }
+
+    .cardContent p {
+        font-size: 1.2rem;
+        padding: 0 4%;
+        text-wrap: balance;
+    }
+
+    /* Projetos */
+
+    .projetos {
+        height: 150vh;
+    }
+    .containerProjetos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardProjetos {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .projetoImg {
+        width: 88%;
+        padding: 0;
+    }
+
+    .projetoContent h3 {
+        font-size: 1.5rem;
+    }
+
+    .projetoContent p {
+        font-size: 1.3rem;
+    }
+
+    /* Contato */
+    .contato {
+        height: 50vh;
+    }
+
+    .contato h1 {
+        font-size: 2.2rem;
+    }
+
+    .contatoSub {
+        font-size: 1rem;
+        width: 80vw;
+        margin-bottom: 3%;
+    }
+
+    .containerContato {
+        width: 90vw;
+    }
+
+    .contatoContent {
+        min-height: 20vh;
+    }
+
+    .contadorChars {
+        margin-left: 0;
+    }
+
+    .contatoBotaoWrapper {
+        justify-content: center;
+    }
+
+    .butEnviar {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Footer */
+    .footerSite {
+        height: 26vh;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .footerIcones {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 481px) {
+
+    /* Titulo */
+    .titulo {
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+        margin-left: 0;
+        padding: 10vh 0 6vh;
+        align-items: center;
+    }
+
+    .tituConteudo {
+        width: 70vw;
+        text-align: center;
+    }
+
+    .tituMain,
+    .tituContent {
+        align-items: center;
+    }
+
+    .tituFoto {
+        width: 35vw;
+        height: 35vw;
+        max-width: 280px;
+        max-height: 280px;
+        margin: 4vh 0 0;
+    }
+
+    .butTitu {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .aplicativos {
+        width: 40vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Interesses */
+    .interesses {
+        height: auto;
+        padding-bottom: 6vh;
+    }
+
+    .containerInteresses {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4vh 3%;
+    }
+
+    .cardInteresses {
+        width: 45vw;
+        height: auto;
+        padding-bottom: 4%;
+    }
+
+    .cardImg {
+        width: 15vw;
+        height: 15vw;
+        margin: 2rem auto 0;
+    }
+
+    /* Projetos */
+    .projetos {
+        height: auto;
+        padding-bottom: 6vh;
+    }
+
+    .containerProjetos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4vh 3%;
+    }
+
+    .cardProjetos {
+        width: 45vw;
+        height: auto;
+        padding-bottom: 4%;
+    }
+
+    .projetoImg {
+        width: 40vw;
+    }
+
+    /* Contato */
+    .containerContato {
+        width: 80vw;
+    }
 }
